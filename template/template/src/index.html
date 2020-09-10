@@ -10,7 +10,10 @@
     />
     <title>Document</title>
     <!--add your own script for connecting to Font Awesome-->
-    <script src="" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/46f8ed1ca2.js"
+      crossorigin="anonymous"
+    ></script>
     <!---->
     <link rel="stylesheet" href="css/style.min.css" />
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
@@ -21,13 +24,83 @@
       <main class="page">
         @@include("_header.html", {})
         <!--If fullscreen is needed-->
-        <div class="main-screen"></div>
-        <div class="content"></div>
+        <div class="main-screen">
+          <div class="main-screen__slider">
+            <div class="main-screen__body">
+              <div class="main-screen__item item-main-screen">
+                <div class="main-screen__container">
+                  <div class="item-main-screen__content">
+                    <div class="title">
+                      <div class="title__item">Только эксклюзивные</div>
+                      <div class="title__main title__main-w title__main-r">
+                        Лоты под аукцион и свобоДную продажу
+                      </div>
+                    </div>
+                    <div class="item-main-screen__text">
+                      Мы собираем эксклюзивную публику и экслюзивные лоты, даем
+                      удобный и автоматизированный сервис по покупке и продаже,
+                      а также выставлению лотов на аукцион, предоставляем личные
+                      кабинеты, а также оказываем сопутствубщие услуги с
+                      продажей редких и дорогих вещей
+                    </div>
+                    <a href="" class="item-main-screen__btn btn">
+                      <span class="btn__body">
+                        <span>Присоединится</span>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+                <div class="item-main-screen__bg ibg">
+                  <img src="img/bgm.jpg" alt="bg" />
+                </div>
+              </div>
+            </div>
+            <div class="main-screen__control control">
+              <div class="control__arrow control__arrow-prev"></div>
+              <div class="control__decor">
+                <img src="img/icons/dc.png" alt="dc" />
+              </div>
+              <div class="control__arrow control__arrow-next"></div>
+            </div>
+          </div>
+        </div>
+        <div class="content">
+          <section class="lots">
+            <div class="container">
+              <div class="lots__header block-header">
+                <div class="title">
+                  <div class="title__item">Популярные</div>
+                  <div class="title__main">лоты Под аукцион</div>
+                </div>
+                <div class="block-header__decor decorate">
+                  <div class="decorate__body">
+                    <div class="decorate__line">
+                      <img src="img/icons/line.svg" alt="line" />
+                    </div>
+                    <div class="decorate__watch">
+                      <img src="img/icons/w1.png" alt="lin" />
+                    </div>
+                    <div class="decorate__line decorate__line-next">
+                      <img src="img/icons/line.svg" alt="line" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="lots__slider slider-lots">
+                <div class="slider-lots__body">
+                  <div class="slider-lots__item">
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
         @@include("_footer.html",{})
       </main>
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/script.min.js"></script>
   </body>
