@@ -830,12 +830,19 @@ $font_family: "PT Sans", sans-serif;
 }
 .slider-quotes {
   &__body {
+    @media (max-width: 570px) {
+      margin: 0px 0px 30px 0px;
+    }
   }
   &__content {
     flex: 0 1 515px;
   }
   &__slide {
     display: flex;
+    align-items: center;
+    @media (max-width: 570px) {
+      display: block;
+    }
   }
 
   &__image {
@@ -891,7 +898,7 @@ $font_family: "PT Sans", sans-serif;
       border-radius: 50%;
       border: 1px solid #bb9c66;
     }
-    &:last-child{
+    &:last-child {
       transform: rotate(-180deg);
     }
   }
@@ -908,6 +915,167 @@ $font_family: "PT Sans", sans-serif;
     height: 50px;
     background: url("../img/icons/rot.png") center no-repeat;
     cursor: pointer;
+  }
+}
+
+//*---------------------------------------
+
+.info {
+  padding: 0px 0px 75px 0px;
+  &__row {
+    display: flex;
+    margin: 0 -22px;
+    flex-wrap: wrap;
+    @media (max-width: $mw3) {
+      display: block;
+    }
+  }
+
+  &__column {
+    flex: 0 1 50%;
+    padding: 0 22px;
+    margin: 0px 0px 55px 0px;
+    @media (max-width: $mw3) {
+      margin: 0px 0px 30px 0px;
+    }
+    &:last-child {
+      margin: 0;
+      flex: 1 1 100%;
+    }
+  }
+
+  &__block {
+  }
+
+  &__title {
+  }
+
+  &__content {
+  }
+
+  &__item {
+    margin: 0px 0px 30px 0px;
+    @media (max-width: $mw3) {
+      margin: 0px 0px 15px 0px;
+    }
+  }
+
+  &__date {
+    color: #bb9c66;
+    font-size: 12px;
+    margin: 0px 0px 5px 0px;
+  }
+
+  &__label {
+    color: #333333;
+    font-weight: 700;
+    font-size: 15px;
+    text-decoration: underline;
+    display: inline-block;
+    margin: 0px 0px 5px 0px;
+  }
+
+  &__text {
+    font-size: 15px;
+    line-height: calc(21 / 15);
+  }
+
+  &__subscribe {
+  }
+}
+
+.title-info {
+  display: flex;
+  align-items: center;
+  font-size: 35px;
+  font-family: "PFDin";
+  letter-spacing: 3.5px;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin: 0px 0px 30px 0px;
+  @media (max-width: $mw3) {
+    margin: 0px 0px 15px 0px;
+  }
+  span {
+    &:first-child {
+      margin: 0px 15px 0px 0px;
+      picture {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}
+.subscribe {
+  &__title {
+  }
+
+  &__body {
+    display: flex;
+    margin: 0 -22px;
+    @media (max-width: $mw3) {
+      display: block;
+    }
+  }
+
+  &__column {
+    padding: 0 22px;
+    flex: 0 1 50%;
+  }
+
+  &__text {
+    font-size: 15px;
+    line-height: calc(21 / 15);
+    @media (max-width: $mw3) {
+      margin: 0px 0px 25px 0px;
+    }
+  }
+
+  &__form {
+  }
+}
+.form-subscribe {
+  height: 50px;
+  border: 3px solid #bb9c66;
+  background-color: #ffffff;
+  display: flex;
+  &__input {
+    border-radius: 0 !important;
+    width: 100%;
+    color: #4f4f4f;
+    display: block;
+    padding: 10px 25px;
+    font-size: 15px;
+    height: 100%;
+    flex: 1 1 auto;
+  }
+
+  &__btn {
+    position: relative;
+    flex: 0 0 95px;
+    background-color: #fff;
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translate(0px, -50%);
+      width: 1px;
+      height: 32px;
+      background-color: #bb9c66;
+    }
+    span {
+      background: url("../img/icons/r1.png") right no-repeat;
+      padding: 0px 32px 0px 0px;
+      color: #1c242a;
+      font-family: "PFDin";
+      font-size: 21px;
+      font-weight: 500;
+      line-height: calc(25 / 21);
+      text-transform: uppercase;
+      letter-spacing: 2.12px;
+    }
   }
 }
 
