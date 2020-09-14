@@ -4,26 +4,76 @@
     <meta charset="UTF-8" />
     <meta name="author" content="Den Nykypanchuk" />
     <meta name="format-detection" content="telephone=no" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=0"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=0"/>
     <title>Document</title>
-    <!--add your own script for connecting to Font Awesome-->
-    <script
-      src="https://kit.fontawesome.com/46f8ed1ca2.js"
-      crossorigin="anonymous"
-    ></script>
-    <!---->
+    <script src="https://kit.fontawesome.com/46f8ed1ca2.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.min.css" />
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
   </head>
   <body>
     <div class="wrapper">
-      <!--Content-->
+      
       <main class="page">
-        @@include("_header.html", {})
-        <!--If fullscreen is needed-->
+        <header class="header">
+  <div class="container">
+    <div class="header__body">
+      <div class="icon-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <a href="" class="header__logo">
+        <picture><source srcset="img/icons/hlogo.webp" type="image/webp"><img src="img/icons/hlogo.png" alt="logo" /></picture>
+      </a>
+      <nav class="header__menu menu">
+        <div class="menu__body">
+          <ul class="menu__list">
+            <li>
+              <a href="" class="menu__link">Главная</a>
+            </li>
+            <li>
+              <a href="" class="menu__link">Аукцион</a>
+            </li>
+            <li>
+              <a href="" class="menu__link">О проекте</a>
+            </li>
+            <li>
+              <a href="" class="menu__link">Партнерам</a>
+            </li>
+            <li>
+              <a href="" class="menu__link">Контакты</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="header__action action-header">
+        <a href="" class="action-header__link">
+          <span> Выбор Региона</span>
+        </a>
+        <div class="action-header__user user">
+          <div class="user__icon">
+            <picture><source srcset="img/icons/user.webp" type="image/webp"><img src="img/icons/user.png" alt="logo" /></picture>
+          </div>
+          <ul class="user__menu">
+            <li>
+              <a href="" class="user__link user__link-1">Выбор региона</a>
+            </li>
+            <li>
+              <a href="" class="user__link user__link-2">Личный кабинет</a>
+            </li>
+            <li>
+              <a href="" class="user__link user__link-3">Мои ставки</a>
+            </li>
+            <li>
+              <a href="" class="user__link user__link-4">Мои лоты</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
         <div class="main-screen">
           <div class="main-screen__slider">
             <div class="main-screen__body">
@@ -51,14 +101,14 @@
                   </div>
                 </div>
                 <div class="item-main-screen__bg ibg">
-                  <img src="img/bgm.jpg" alt="bg" />
+                  <picture><source srcset="img/bgm.webp" type="image/webp"><img src="img/bgm.jpg" alt="bg" /></picture>
                 </div>
               </div>
             </div>
             <div class="main-screen__control control">
               <div class="control__arrow control__arrow-prev"></div>
               <div class="control__decor">
-                <img src="img/icons/dc.png" alt="dc" />
+                <picture><source srcset="img/icons/dc.webp" type="image/webp"><img src="img/icons/dc.png" alt="dc" /></picture>
               </div>
               <div class="control__arrow control__arrow-next"></div>
             </div>
@@ -75,13 +125,13 @@
                 <div class="block-header__decor decorate">
                   <div class="decorate__body">
                     <div class="decorate__line">
-                      <img src="img/icons/line.svg" alt="line" />
+                      <picture><source srcset="img/icons/line.svg" type="image/webp"><img src="img/icons/line.svg" alt="line" /></picture>
                     </div>
                     <div class="decorate__watch">
-                      <img src="img/icons/w1.png" alt="lin" />
+                      <picture><source srcset="img/icons/w1.webp" type="image/webp"><img src="img/icons/w1.png" alt="lin" /></picture>
                     </div>
                     <div class="decorate__line decorate__line-next">
-                      <img src="img/icons/line.svg" alt="line" />
+                      <picture><source srcset="img/icons/line.svg" type="image/webp"><img src="img/icons/line.svg" alt="line" /></picture>
                     </div>
                   </div>
                 </div>
@@ -93,11 +143,11 @@
                       <div class="item-slider__item">
                         <div class="item-slider__header">
                           <a href="" class="item-slider__image ibg">
-                            <img src="img/l1.png" alt="logo" />
+                            <picture><source srcset="img/l1.webp" type="image/webp"><img src="img/l1.png" alt="logo" /></picture>
                           </a>
                           <div class="item-slider__timer timer">
                             <div class="timer__icon">
-                              <img src="img/icons/timer.png" alt="" />
+                              <picture><source srcset="img/icons/timer.webp" type="image/webp"><img src="img/icons/timer.png" alt="" /></picture>
                             </div>
                             <div class="timer__text">3:21:45:37</div>
                           </div>
@@ -109,7 +159,7 @@
                           <div class="item-slider__info info-slider">
                             <div class="info-slider__stats">
                               <div class="info-slider__icon">
-                                <img src="img/icons/eye.png" alt="" />
+                                <picture><source srcset="img/icons/eye.webp" type="image/webp"><img src="img/icons/eye.png" alt="" /></picture>
                               </div>
                               <div class="info-slider__text">1 098</div>
                             </div>
@@ -124,7 +174,7 @@
                             </div>
                             <div class="info-slider__stats">
                               <div class="info-slider__icon">
-                                <img src="img/icons/pic.png" alt="" />
+                                <picture><source srcset="img/icons/pic.webp" type="image/webp"><img src="img/icons/pic.png" alt="" /></picture>
                               </div>
                               <div class="info-slider__text">75</div>
                             </div>
@@ -139,11 +189,11 @@
                       <div class="item-slider__item">
                         <div class="item-slider__header">
                           <a href="" class="item-slider__image ibg">
-                            <img src="img/l2.png" alt="logo" />
+                            <picture><source srcset="img/l2.webp" type="image/webp"><img src="img/l2.png" alt="logo" /></picture>
                           </a>
                           <div class="item-slider__timer timer">
                             <div class="timer__icon">
-                              <img src="img/icons/timer.png" alt="" />
+                              <picture><source srcset="img/icons/timer.webp" type="image/webp"><img src="img/icons/timer.png" alt="" /></picture>
                             </div>
                             <div class="timer__text">3:21:45:37</div>
                           </div>
@@ -155,7 +205,7 @@
                           <div class="item-slider__info info-slider">
                             <div class="info-slider__stats">
                               <div class="info-slider__icon">
-                                <img src="img/icons/eye.png" alt="" />
+                                <picture><source srcset="img/icons/eye.webp" type="image/webp"><img src="img/icons/eye.png" alt="" /></picture>
                               </div>
                               <div class="info-slider__text">1 098</div>
                             </div>
@@ -170,7 +220,7 @@
                             </div>
                             <div class="info-slider__stats">
                               <div class="info-slider__icon">
-                                <img src="img/icons/pic.png" alt="" />
+                                <picture><source srcset="img/icons/pic.webp" type="image/webp"><img src="img/icons/pic.png" alt="" /></picture>
                               </div>
                               <div class="info-slider__text">75</div>
                             </div>
@@ -185,11 +235,11 @@
                       <div class="item-slider__item">
                         <div class="item-slider__header">
                           <a href="" class="item-slider__image ibg">
-                            <img src="img/l3.png" alt="logo" />
+                            <picture><source srcset="img/l3.webp" type="image/webp"><img src="img/l3.png" alt="logo" /></picture>
                           </a>
                           <div class="item-slider__timer timer">
                             <div class="timer__icon">
-                              <img src="img/icons/timer.png" alt="" />
+                              <picture><source srcset="img/icons/timer.webp" type="image/webp"><img src="img/icons/timer.png" alt="" /></picture>
                             </div>
                             <div class="timer__text">3:21:45:37</div>
                           </div>
@@ -201,7 +251,7 @@
                           <div class="item-slider__info info-slider">
                             <div class="info-slider__stats">
                               <div class="info-slider__icon">
-                                <img src="img/icons/eye.png" alt="" />
+                                <picture><source srcset="img/icons/eye.webp" type="image/webp"><img src="img/icons/eye.png" alt="" /></picture>
                               </div>
                               <div class="info-slider__text">1 098</div>
                             </div>
@@ -216,7 +266,7 @@
                             </div>
                             <div class="info-slider__stats">
                               <div class="info-slider__icon">
-                                <img src="img/icons/pic.png" alt="" />
+                                <picture><source srcset="img/icons/pic.webp" type="image/webp"><img src="img/icons/pic.png" alt="" /></picture>
                               </div>
                               <div class="info-slider__text">75</div>
                             </div>
@@ -250,14 +300,14 @@
                   <div class="categories__item item-category">
                     <a href="" class="item-category__link"></a>
                     <div class="item-category__icon">
-                      <img src="img/images/icon/i1.png" alt="" />
+                      <picture><source srcset="img/images/icon/i1.webp" type="image/webp"><img src="img/images/icon/i1.png" alt="" /></picture>
                     </div>
                     <div class="item-category__title">Часы</div>
                     <div class="item-category__decor">
-                      <img src="img/images/decor.svg" alt="dec" />
+                      <picture><source srcset="img/images/decor.svg" type="image/webp"><img src="img/images/decor.svg" alt="dec" /></picture>
                     </div>
                     <div class="item-category__bg">
-                      <img src="img/images/im1.png" alt="" />
+                      <picture><source srcset="img/images/im1.webp" type="image/webp"><img src="img/images/im1.png" alt="" /></picture>
                     </div>
                   </div>
                   <div class="categories__decor"><span></span></div>
@@ -266,14 +316,14 @@
                   <div class="categories__item item-category">
                     <a href="" class="item-category__link"></a>
                     <div class="item-category__icon">
-                      <img src="img/images/icon/i2.png" alt="" />
+                      <picture><source srcset="img/images/icon/i2.webp" type="image/webp"><img src="img/images/icon/i2.png" alt="" /></picture>
                     </div>
                     <div class="item-category__title">Ювелирные Изделия</div>
                     <div class="item-category__decor">
-                      <img src="img/images/decor.svg" alt="dec" />
+                      <picture><source srcset="img/images/decor.svg" type="image/webp"><img src="img/images/decor.svg" alt="dec" /></picture>
                     </div>
                     <div class="item-category__bg">
-                      <img src="img/images/im2.png" alt="" />
+                      <picture><source srcset="img/images/im2.webp" type="image/webp"><img src="img/images/im2.png" alt="" /></picture>
                     </div>
                   </div>
                   <div class="categories__decor"><span></span></div>
@@ -282,16 +332,16 @@
                   <div class="categories__item item-category">
                     <a href="" class="item-category__link"></a>
                     <div class="item-category__icon">
-                      <img src="img/images/icon/i3.png" alt="" />
+                      <picture><source srcset="img/images/icon/i3.webp" type="image/webp"><img src="img/images/icon/i3.png" alt="" /></picture>
                     </div>
                     <div class="item-category__title">
                       Автотранспорт и лодки
                     </div>
                     <div class="item-category__decor">
-                      <img src="img/images/decor.svg" alt="dec" />
+                      <picture><source srcset="img/images/decor.svg" type="image/webp"><img src="img/images/decor.svg" alt="dec" /></picture>
                     </div>
                     <div class="item-category__bg">
-                      <img src="img/images/im3.png" alt="" />
+                      <picture><source srcset="img/images/im3.webp" type="image/webp"><img src="img/images/im3.png" alt="" /></picture>
                     </div>
                   </div>
                   <div class="categories__decor"><span></span></div>
@@ -300,14 +350,14 @@
                   <div class="categories__item item-category">
                     <a href="" class="item-category__link"></a>
                     <div class="item-category__icon">
-                      <img src="img/images/icon/i4.png" alt="" />
+                      <picture><source srcset="img/images/icon/i4.webp" type="image/webp"><img src="img/images/icon/i4.png" alt="" /></picture>
                     </div>
                     <div class="item-category__title">Аксуссуары</div>
                     <div class="item-category__decor">
-                      <img src="img/images/decor.svg" alt="dec" />
+                      <picture><source srcset="img/images/decor.svg" type="image/webp"><img src="img/images/decor.svg" alt="dec" /></picture>
                     </div>
                     <div class="item-category__bg">
-                      <img src="img/images/im4.png" alt="" />
+                      <picture><source srcset="img/images/im4.webp" type="image/webp"><img src="img/images/im4.png" alt="" /></picture>
                     </div>
                   </div>
                   <div class="categories__decor"><span></span></div>
@@ -316,14 +366,14 @@
                   <div class="categories__item item-category">
                     <a href="" class="item-category__link"></a>
                     <div class="item-category__icon">
-                      <img src="img/images/icon/i5.png" alt="" />
+                      <picture><source srcset="img/images/icon/i5.webp" type="image/webp"><img src="img/images/icon/i5.png" alt="" /></picture>
                     </div>
                     <div class="item-category__title">Недвижимость</div>
                     <div class="item-category__decor">
-                      <img src="img/images/decor.svg" alt="dec" />
+                      <picture><source srcset="img/images/decor.svg" type="image/webp"><img src="img/images/decor.svg" alt="dec" /></picture>
                     </div>
                     <div class="item-category__bg">
-                      <img src="img/images/im5.png" alt="" />
+                      <picture><source srcset="img/images/im5.webp" type="image/webp"><img src="img/images/im5.png" alt="" /></picture>
                     </div>
                   </div>
                   <div class="categories__decor"><span></span></div>
@@ -332,14 +382,14 @@
                   <div class="categories__item item-category">
                     <a href="" class="item-category__link"></a>
                     <div class="item-category__icon">
-                      <img src="img/images/icon/i6.png" alt="" />
+                      <picture><source srcset="img/images/icon/i6.webp" type="image/webp"><img src="img/images/icon/i6.png" alt="" /></picture>
                     </div>
                     <div class="item-category__title">Hi-Tech</div>
                     <div class="item-category__decor">
-                      <img src="img/images/decor.svg" alt="dec" />
+                      <picture><source srcset="img/images/decor.svg" type="image/webp"><img src="img/images/decor.svg" alt="dec" /></picture>
                     </div>
                     <div class="item-category__bg">
-                      <img src="img/images/im6.png" alt="" />
+                      <picture><source srcset="img/images/im6.webp" type="image/webp"><img src="img/images/im6.png" alt="" /></picture>
                     </div>
                   </div>
                   <div class="categories__decor"><span></span></div>
@@ -348,14 +398,14 @@
                   <div class="categories__item item-category">
                     <a href="" class="item-category__link"></a>
                     <div class="item-category__icon">
-                      <img src="img/images/icon/i7.png" alt="" />
+                      <picture><source srcset="img/images/icon/i7.webp" type="image/webp"><img src="img/images/icon/i7.png" alt="" /></picture>
                     </div>
                     <div class="item-category__title">Одежда и обувь</div>
                     <div class="item-category__decor">
-                      <img src="img/images/decor.svg" alt="dec" />
+                      <picture><source srcset="img/images/decor.svg" type="image/webp"><img src="img/images/decor.svg" alt="dec" /></picture>
                     </div>
                     <div class="item-category__bg">
-                      <img src="img/images/im7.png" alt="" />
+                      <picture><source srcset="img/images/im7.webp" type="image/webp"><img src="img/images/im7.png" alt="" /></picture>
                     </div>
                   </div>
                   <div class="categories__decor"><span></span></div>
@@ -364,14 +414,14 @@
                   <div class="categories__item item-category">
                     <a href="" class="item-category__link"></a>
                     <div class="item-category__icon">
-                      <img src="img/images/icon/i8.png" alt="" />
+                      <picture><source srcset="img/images/icon/i8.webp" type="image/webp"><img src="img/images/icon/i8.png" alt="" /></picture>
                     </div>
                     <div class="item-category__title">Предметы искусства</div>
                     <div class="item-category__decor">
-                      <img src="img/images/decor.svg" alt="dec" />
+                      <picture><source srcset="img/images/decor.svg" type="image/webp"><img src="img/images/decor.svg" alt="dec" /></picture>
                     </div>
                     <div class="item-category__bg">
-                      <img src="img/images/im8.png" alt="" />
+                      <picture><source srcset="img/images/im8.webp" type="image/webp"><img src="img/images/im8.png" alt="" /></picture>
                     </div>
                   </div>
                   <div class="categories__decor"><span></span></div>
@@ -380,14 +430,14 @@
                   <div class="categories__item item-category">
                     <a href="" class="item-category__link"></a>
                     <div class="item-category__icon">
-                      <img src="img/images/icon/i9.png" alt="" />
+                      <picture><source srcset="img/images/icon/i9.webp" type="image/webp"><img src="img/images/icon/i9.png" alt="" /></picture>
                     </div>
                     <div class="item-category__title">АЛкоголь и еда</div>
                     <div class="item-category__decor">
-                      <img src="img/images/decor.svg" alt="dec" />
+                      <picture><source srcset="img/images/decor.svg" type="image/webp"><img src="img/images/decor.svg" alt="dec" /></picture>
                     </div>
                     <div class="item-category__bg">
-                      <img src="img/images/im9.png" alt="" />
+                      <picture><source srcset="img/images/im9.webp" type="image/webp"><img src="img/images/im9.png" alt="" /></picture>
                     </div>
                   </div>
                   <div class="categories__decor"><span></span></div>
@@ -436,13 +486,13 @@
                 <div class="block-header__decor decorate">
                   <div class="decorate__body">
                     <div class="decorate__line">
-                      <img src="img/icons/line.svg" alt="line" />
+                      <picture><source srcset="img/icons/line.svg" type="image/webp"><img src="img/icons/line.svg" alt="line" /></picture>
                     </div>
                     <div class="decorate__watch">
-                      <img src="img/icons/w2.png" alt="lin" />
+                      <picture><source srcset="img/icons/w2.webp" type="image/webp"><img src="img/icons/w2.png" alt="lin" /></picture>
                     </div>
                     <div class="decorate__line decorate__line-next">
-                      <img src="img/icons/line.svg" alt="line" />
+                      <picture><source srcset="img/icons/line.svg" type="image/webp"><img src="img/icons/line.svg" alt="line" /></picture>
                     </div>
                   </div>
                 </div>
@@ -451,7 +501,7 @@
                 <div class="service__column">
                   <div class="service__item">
                     <a href="" class="service__image">
-                      <img src="img/s1.png" alt="" />
+                      <picture><source srcset="img/s1.webp" type="image/webp"><img src="img/s1.png" alt="" /></picture>
                     </a>
                     <div class="service__title">Экспертная оценка</div>
                     <div class="service__text">
@@ -466,7 +516,7 @@
                 <div class="service__column">
                   <div class="service__item">
                     <a href="" class="service__image">
-                      <img src="img/s2.png" alt="" />
+                      <picture><source srcset="img/s2.webp" type="image/webp"><img src="img/s2.png" alt="" /></picture>
                     </a>
                     <div class="service__title">заказ комплектующих</div>
                     <div class="service__text">
@@ -481,7 +531,7 @@
                 <div class="service__column">
                   <div class="service__item">
                     <a href="" class="service__image">
-                      <img src="img/s3.png" alt="" />
+                      <picture><source srcset="img/s3.webp" type="image/webp"><img src="img/s3.png" alt="" /></picture>
                     </a>
                     <div class="service__title">ремонт и реставрациЯ</div>
                     <div class="service__text">
@@ -506,13 +556,13 @@
                 <div class="block-header__decor decorate">
                   <div class="decorate__body">
                     <div class="decorate__line">
-                      <img src="img/icons/line.svg" alt="line" />
+                      <picture><source srcset="img/icons/line.svg" type="image/webp"><img src="img/icons/line.svg" alt="line" /></picture>
                     </div>
                     <div class="decorate__watch">
-                      <img src="img/icons/w3.png" alt="lin" />
+                      <picture><source srcset="img/icons/w3.webp" type="image/webp"><img src="img/icons/w3.png" alt="lin" /></picture>
                     </div>
                     <div class="decorate__line decorate__line-next">
-                      <img src="img/icons/line.svg" alt="line" />
+                      <picture><source srcset="img/icons/line.svg" type="image/webp"><img src="img/icons/line.svg" alt="line" /></picture>
                     </div>
                   </div>
                 </div>
@@ -521,7 +571,7 @@
                 <div class="slider-quotes__content">
                   <div class="slider-quotes__slide">
                     <div class="slider-quotes__image">
-                      <img src="img/icons/mt.png" alt="mt" />
+                      <picture><source srcset="img/icons/mt.webp" type="image/webp"><img src="img/icons/mt.png" alt="mt" /></picture>
                     </div>
                     <div class="slider-quotes__body">
                       <div class="slider-quotes__title">
@@ -552,7 +602,7 @@
                   <div class="info__block">
                     <div class="info__title title-info">
                       <span>
-                        <img src="img/icons/n1.png" alt="" />
+                        <picture><source srcset="img/icons/n1.webp" type="image/webp"><img src="img/icons/n1.png" alt="" /></picture>
                       </span>
                       <span> Новости </span>
                     </div>
@@ -595,7 +645,7 @@
                   <div class="info__block">
                     <div class="info__title title-info">
                       <span>
-                        <img src="img/icons/n2.png" alt="" />
+                        <picture><source srcset="img/icons/n2.webp" type="image/webp"><img src="img/icons/n2.png" alt="" /></picture>
                       </span>
                       <span> События </span>
                     </div>
@@ -626,7 +676,7 @@
                   <div class="info__subscribe subscribe">
                     <div class="subscribe__title title-info">
                       <span>
-                        <img src="img/icons/n3.png" alt="" />
+                        <picture><source srcset="img/icons/n3.webp" type="image/webp"><img src="img/icons/n3.png" alt="" /></picture>
                       </span>
                       <span> Подписка </span>
                     </div>
@@ -661,7 +711,62 @@
             </div>
           </div>
         </div>
-        @@include("_footer.html",{})
+        <footer class="footer">
+  <div class="footer__content container">
+    <div class="footer__column">
+      <a href="" class="footer__logo">
+        <picture><source srcset="img/fl.webp" type="image/webp"><img src="img/fl.png" alt="" /></picture>
+      </a>
+      <div class="footer__info">Все права защищены © 2014</div>
+    </div>
+    <div class="footer__column footer__column-full">
+      <nav class="footer__menu">
+        <ul class="footer__list">
+          <li>
+            <a href="" class="footer__link">Главная</a>
+          </li>
+          <li>
+            <a href="" class="footer__link">Аукцион</a>
+          </li>
+          <li>
+            <a href="" class="footer__link">О проекте</a>
+          </li>
+          <li>
+            <a href="" class="footer__link">Партнерам</a>
+          </li>
+          <li>
+            <a href="" class="footer__link">Контакты</a>
+          </li>
+          <li>
+            <a href="" class="footer__link">Новости</a>
+          </li>
+          <li>
+            <a href="" class="footer__link">FAQ</a>
+          </li>
+          <li>
+            <a href="" class="footer__link">Реклама</a>
+          </li>
+          <li>
+            <a href="" class="footer__link">Соглашение</a>
+          </li>
+          <li>
+            <a href="" class="footer__link">Регистрация</a>
+          </li>
+          <li>
+            <a href="" class="footer__link">Услуги</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer__column">
+      <a href="tel:+7495222222" class="footer__phone"><sup> +7</sup> (495) 22-22-22</a>
+      <a href="" class="footer__callback">
+        <span>Обратная связь</span>
+      </a>
+    </div>
+  </div>
+</footer>
+
       </main>
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
@@ -669,4 +774,4 @@
     <script src="js/script.min.js"></script>
   </body>
 </html>
-<!--Use attribute "data-lazy" instead of "src" for img tags-->
+
